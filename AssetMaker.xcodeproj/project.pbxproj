@@ -13,6 +13,8 @@
 		630F018B270D9044000CB7B7 /* AppiconResizerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F018A270D9044000CB7B7 /* AppiconResizerPresenter.swift */; };
 		630F018E270D9394000CB7B7 /* StackNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F018D270D9394000CB7B7 /* StackNavigationView.swift */; };
 		630F0192270D947A000CB7B7 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F0191270D947A000CB7B7 /* HomeButton.swift */; };
+		630F0195270DA5B1000CB7B7 /* DropImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F0194270DA5B1000CB7B7 /* DropImage.swift */; };
+		630F0197270DB2F9000CB7B7 /* PlaceholderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F0196270DB2F9000CB7B7 /* PlaceholderImage.swift */; };
 		63B79CCA270C864A003C73D8 /* AssetMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B79CC9270C864A003C73D8 /* AssetMakerApp.swift */; };
 		63B79CCC270C864A003C73D8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B79CCB270C864A003C73D8 /* HomeView.swift */; };
 		63B79CCE270C864E003C73D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B79CCD270C864E003C73D8 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		630F018A270D9044000CB7B7 /* AppiconResizerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiconResizerPresenter.swift; sourceTree = "<group>"; };
 		630F018D270D9394000CB7B7 /* StackNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackNavigationView.swift; sourceTree = "<group>"; };
 		630F0191270D947A000CB7B7 /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
+		630F0194270DA5B1000CB7B7 /* DropImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropImage.swift; sourceTree = "<group>"; };
+		630F0196270DB2F9000CB7B7 /* PlaceholderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderImage.swift; sourceTree = "<group>"; };
 		63B79CC6270C864A003C73D8 /* AssetMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssetMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B79CC9270C864A003C73D8 /* AssetMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMakerApp.swift; sourceTree = "<group>"; };
 		63B79CCB270C864A003C73D8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 		630F018C270D9371000CB7B7 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				630F0193270DA577000CB7B7 /* DropImage */,
 				630F0190270D9464000CB7B7 /* Buttons */,
 				630F018F270D945A000CB7B7 /* Navigation */,
 			);
@@ -165,6 +170,15 @@
 				630F0191270D947A000CB7B7 /* HomeButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		630F0193270DA577000CB7B7 /* DropImage */ = {
+			isa = PBXGroup;
+			children = (
+				630F0194270DA5B1000CB7B7 /* DropImage.swift */,
+				630F0196270DB2F9000CB7B7 /* PlaceholderImage.swift */,
+			);
+			path = DropImage;
 			sourceTree = "<group>";
 		};
 		63B79CBD270C864A003C73D8 = {
@@ -358,11 +372,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				630F0185270D9009000CB7B7 /* AppiconResizerView.swift in Sources */,
+				630F0197270DB2F9000CB7B7 /* PlaceholderImage.swift in Sources */,
 				630F0192270D947A000CB7B7 /* HomeButton.swift in Sources */,
 				63B79CCC270C864A003C73D8 /* HomeView.swift in Sources */,
 				630F0189270D9025000CB7B7 /* AssetResizerPresenter.swift in Sources */,
 				630F0187270D9013000CB7B7 /* AssetResizerView.swift in Sources */,
 				630F018E270D9394000CB7B7 /* StackNavigationView.swift in Sources */,
+				630F0195270DA5B1000CB7B7 /* DropImage.swift in Sources */,
 				63B79CCA270C864A003C73D8 /* AssetMakerApp.swift in Sources */,
 				630F018B270D9044000CB7B7 /* AppiconResizerPresenter.swift in Sources */,
 			);

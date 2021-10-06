@@ -8,8 +8,37 @@
 import SwiftUI
 
 struct AssetResizerView: View {
+    
+    @State var image = NSImage()
+    
+    var presenter = AssetResizerPresenter()
+
     var body: some View {
-        Text("AssetResizer")
+        VStack (spacing: 50){
+            
+            DropImage(image: $image, color: Color("asset_resizer"), width: 160, height: 160)
+            
+            HStack (spacing: 35){
+                PlaceholderImage(image: $image, text: "X1", width: 80, height: 80)
+                PlaceholderImage(image: $image, text: "X2", width: 105, height: 105)
+
+                PlaceholderImage(image: $image, text: "X3", width: 130, height: 130)
+
+
+            }
+            .frame(height: 210)
+            
+            Text("Export")
+                .font(.title3)
+                .padding(.horizontal,10)
+                .padding(.vertical,4)
+                .foregroundColor(.white)
+                .background(Color("asset_resizer"))
+                .clipShape(Capsule())
+        }
+        .padding(50)
+        
+        
     }
 }
 
