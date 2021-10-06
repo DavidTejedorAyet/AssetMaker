@@ -10,8 +10,7 @@ import SwiftUI
 struct AssetResizerView: View {
     
     @State var image = NSImage()
-    
-    var presenter = AssetResizerPresenter()
+    @ObservedObject var presenter = AssetResizerPresenter()
 
     var body: some View {
         VStack (spacing: 50){
@@ -21,9 +20,7 @@ struct AssetResizerView: View {
             HStack (spacing: 35){
                 PlaceholderImage(image: $image, text: "X1", width: 80, height: 80)
                 PlaceholderImage(image: $image, text: "X2", width: 105, height: 105)
-
                 PlaceholderImage(image: $image, text: "X3", width: 130, height: 130)
-
 
             }
             .frame(height: 210)
@@ -35,8 +32,11 @@ struct AssetResizerView: View {
                 .foregroundColor(.white)
                 .background(Color("asset_resizer"))
                 .clipShape(Capsule())
+                .onTapGesture {
+                    presenter.resizeAssetAndExport(image: self.image)
+                }
         }
-        .padding(50)
+        .padding(.bottom,50)
         
         
     }

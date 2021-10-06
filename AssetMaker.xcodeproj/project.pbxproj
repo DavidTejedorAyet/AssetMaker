@@ -15,6 +15,8 @@
 		630F0192270D947A000CB7B7 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F0191270D947A000CB7B7 /* HomeButton.swift */; };
 		630F0195270DA5B1000CB7B7 /* DropImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F0194270DA5B1000CB7B7 /* DropImage.swift */; };
 		630F0197270DB2F9000CB7B7 /* PlaceholderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F0196270DB2F9000CB7B7 /* PlaceholderImage.swift */; };
+		630F019A270DE8FF000CB7B7 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F0199270DE8FF000CB7B7 /* NSImage.swift */; };
+		630F019C270DE972000CB7B7 /* FinderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F019B270DE972000CB7B7 /* FinderHelper.swift */; };
 		63B79CCA270C864A003C73D8 /* AssetMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B79CC9270C864A003C73D8 /* AssetMakerApp.swift */; };
 		63B79CCC270C864A003C73D8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B79CCB270C864A003C73D8 /* HomeView.swift */; };
 		63B79CCE270C864E003C73D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B79CCD270C864E003C73D8 /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		630F0191270D947A000CB7B7 /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
 		630F0194270DA5B1000CB7B7 /* DropImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropImage.swift; sourceTree = "<group>"; };
 		630F0196270DB2F9000CB7B7 /* PlaceholderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderImage.swift; sourceTree = "<group>"; };
+		630F0199270DE8FF000CB7B7 /* NSImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImage.swift; sourceTree = "<group>"; };
+		630F019B270DE972000CB7B7 /* FinderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderHelper.swift; sourceTree = "<group>"; };
 		63B79CC6270C864A003C73D8 /* AssetMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssetMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B79CC9270C864A003C73D8 /* AssetMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMakerApp.swift; sourceTree = "<group>"; };
 		63B79CCB270C864A003C73D8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 		630F017D270D8C39000CB7B7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				630F019B270DE972000CB7B7 /* FinderHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -181,6 +186,14 @@
 			path = DropImage;
 			sourceTree = "<group>";
 		};
+		630F0198270DE8F0000CB7B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				630F0199270DE8FF000CB7B7 /* NSImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		63B79CBD270C864A003C73D8 = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				63B79CC9270C864A003C73D8 /* AssetMakerApp.swift */,
+				630F0198270DE8F0000CB7B7 /* Extensions */,
 				630F017D270D8C39000CB7B7 /* Utils */,
 				630F017B270D8C18000CB7B7 /* Data */,
 				630F018C270D9371000CB7B7 /* Custom Views */,
@@ -377,8 +391,10 @@
 				63B79CCC270C864A003C73D8 /* HomeView.swift in Sources */,
 				630F0189270D9025000CB7B7 /* AssetResizerPresenter.swift in Sources */,
 				630F0187270D9013000CB7B7 /* AssetResizerView.swift in Sources */,
+				630F019C270DE972000CB7B7 /* FinderHelper.swift in Sources */,
 				630F018E270D9394000CB7B7 /* StackNavigationView.swift in Sources */,
 				630F0195270DA5B1000CB7B7 /* DropImage.swift in Sources */,
+				630F019A270DE8FF000CB7B7 /* NSImage.swift in Sources */,
 				63B79CCA270C864A003C73D8 /* AssetMakerApp.swift in Sources */,
 				630F018B270D9044000CB7B7 /* AppiconResizerPresenter.swift in Sources */,
 			);
@@ -537,6 +553,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = AssetMaker/AssetMaker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -566,6 +583,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = AssetMaker/AssetMaker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

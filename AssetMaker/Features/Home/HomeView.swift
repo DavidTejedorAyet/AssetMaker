@@ -34,7 +34,7 @@ struct HomeView: View {
             }
             
         }
-        .frame(width: 700, height: 700, alignment: .center)
+        .frame(width: 700, height: 750, alignment: .center)
         .background(Color("background"))
     }
     
