@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630F0185270D9009000CB7B7 /* AppiconResizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F0184270D9009000CB7B7 /* AppiconResizerView.swift */; };
+		630F0187270D9013000CB7B7 /* AssetResizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F0186270D9013000CB7B7 /* AssetResizerView.swift */; };
+		630F0189270D9025000CB7B7 /* AssetResizerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F0188270D9025000CB7B7 /* AssetResizerPresenter.swift */; };
+		630F018B270D9044000CB7B7 /* AppiconResizerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F018A270D9044000CB7B7 /* AppiconResizerPresenter.swift */; };
+		630F018E270D9394000CB7B7 /* StackNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F018D270D9394000CB7B7 /* StackNavigationView.swift */; };
+		630F0192270D947A000CB7B7 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F0191270D947A000CB7B7 /* HomeButton.swift */; };
 		63B79CCA270C864A003C73D8 /* AssetMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B79CC9270C864A003C73D8 /* AssetMakerApp.swift */; };
-		63B79CCC270C864A003C73D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B79CCB270C864A003C73D8 /* ContentView.swift */; };
+		63B79CCC270C864A003C73D8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B79CCB270C864A003C73D8 /* HomeView.swift */; };
 		63B79CCE270C864E003C73D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B79CCD270C864E003C73D8 /* Assets.xcassets */; };
 		63B79CD1270C864E003C73D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B79CD0270C864E003C73D8 /* Preview Assets.xcassets */; };
 		63B79CDC270C864F003C73D8 /* AssetMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B79CDB270C864F003C73D8 /* AssetMakerTests.swift */; };
@@ -34,9 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630F0184270D9009000CB7B7 /* AppiconResizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiconResizerView.swift; sourceTree = "<group>"; };
+		630F0186270D9013000CB7B7 /* AssetResizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetResizerView.swift; sourceTree = "<group>"; };
+		630F0188270D9025000CB7B7 /* AssetResizerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetResizerPresenter.swift; sourceTree = "<group>"; };
+		630F018A270D9044000CB7B7 /* AppiconResizerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiconResizerPresenter.swift; sourceTree = "<group>"; };
+		630F018D270D9394000CB7B7 /* StackNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackNavigationView.swift; sourceTree = "<group>"; };
+		630F0191270D947A000CB7B7 /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
 		63B79CC6270C864A003C73D8 /* AssetMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssetMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B79CC9270C864A003C73D8 /* AssetMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMakerApp.swift; sourceTree = "<group>"; };
-		63B79CCB270C864A003C73D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63B79CCB270C864A003C73D8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		63B79CCD270C864E003C73D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63B79CD0270C864E003C73D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		63B79CD2270C864E003C73D8 /* AssetMaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AssetMaker.entitlements; sourceTree = "<group>"; };
@@ -72,6 +84,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		630F017A270D8C01000CB7B7 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				630F017E270D8D31000CB7B7 /* Home */,
+				630F0180270D8D48000CB7B7 /* Appicon Resizer */,
+				630F017F270D8D38000CB7B7 /* Asset Resizer */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		630F017B270D8C18000CB7B7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				630F017C270D8C21000CB7B7 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		630F017C270D8C21000CB7B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		630F017D270D8C39000CB7B7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		630F017E270D8D31000CB7B7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				63B79CCB270C864A003C73D8 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		630F017F270D8D38000CB7B7 /* Asset Resizer */ = {
+			isa = PBXGroup;
+			children = (
+				630F0186270D9013000CB7B7 /* AssetResizerView.swift */,
+				630F0188270D9025000CB7B7 /* AssetResizerPresenter.swift */,
+			);
+			path = "Asset Resizer";
+			sourceTree = "<group>";
+		};
+		630F0180270D8D48000CB7B7 /* Appicon Resizer */ = {
+			isa = PBXGroup;
+			children = (
+				630F0184270D9009000CB7B7 /* AppiconResizerView.swift */,
+				630F018A270D9044000CB7B7 /* AppiconResizerPresenter.swift */,
+			);
+			path = "Appicon Resizer";
+			sourceTree = "<group>";
+		};
+		630F018C270D9371000CB7B7 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				630F0190270D9464000CB7B7 /* Buttons */,
+				630F018F270D945A000CB7B7 /* Navigation */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		630F018F270D945A000CB7B7 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				630F018D270D9394000CB7B7 /* StackNavigationView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		630F0190270D9464000CB7B7 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				630F0191270D947A000CB7B7 /* HomeButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		63B79CBD270C864A003C73D8 = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +191,10 @@
 			isa = PBXGroup;
 			children = (
 				63B79CC9270C864A003C73D8 /* AssetMakerApp.swift */,
-				63B79CCB270C864A003C73D8 /* ContentView.swift */,
+				630F017D270D8C39000CB7B7 /* Utils */,
+				630F017B270D8C18000CB7B7 /* Data */,
+				630F018C270D9371000CB7B7 /* Custom Views */,
+				630F017A270D8C01000CB7B7 /* Features */,
 				63B79CCD270C864E003C73D8 /* Assets.xcassets */,
 				63B79CD2270C864E003C73D8 /* AssetMaker.entitlements */,
 				63B79CCF270C864E003C73D8 /* Preview Content */,
@@ -259,8 +357,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63B79CCC270C864A003C73D8 /* ContentView.swift in Sources */,
+				630F0185270D9009000CB7B7 /* AppiconResizerView.swift in Sources */,
+				630F0192270D947A000CB7B7 /* HomeButton.swift in Sources */,
+				63B79CCC270C864A003C73D8 /* HomeView.swift in Sources */,
+				630F0189270D9025000CB7B7 /* AssetResizerPresenter.swift in Sources */,
+				630F0187270D9013000CB7B7 /* AssetResizerView.swift in Sources */,
+				630F018E270D9394000CB7B7 /* StackNavigationView.swift in Sources */,
 				63B79CCA270C864A003C73D8 /* AssetMakerApp.swift in Sources */,
+				630F018B270D9044000CB7B7 /* AppiconResizerPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +530,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +559,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
